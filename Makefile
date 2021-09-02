@@ -4,6 +4,10 @@
 MAKEFLAGS += --no-print-directory
 SHELL=/bin/bash
 
+# Use default as default goal when running 'make'
+.PHONY: default
+.DEFAULT_GOAL := default
+
 ###############################################################################
 # GOAL PARAMETERS
 ###############################################################################
